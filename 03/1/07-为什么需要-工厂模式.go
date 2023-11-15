@@ -9,6 +9,7 @@ type Fruit struct {
 	//...
 }
 
+// Show 违反了“单一职责原则”，不利于类的重用和维护；
 func (f *Fruit) Show(name string) {
 	if name == "apple" {
 		fmt.Println("我是苹果")
@@ -44,4 +45,3 @@ func main() {
 	pear := NewFruit("pear")
 	pear.Show("pear")
 }
-
